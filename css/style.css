@@ -1,0 +1,267 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: linear-gradient(to top, #dfe9f3 0%, #fff);
+    margin: 0;
+}
+
+
+/*          CABECERO       */
+
+.titulo1{
+
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: rgb(255, 0, 85);
+    box-shadow: 2px 2px 40px 0 rgb(0, 0, 0);
+    padding: 30px;
+}
+
+span{
+    font-size: 18px;
+    color: rgb(210, 32, 78);
+    
+
+/*          MENU CONTENEDOR       */
+
+}
+.menu/*.contenedor*/{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200,85,100);
+    margin: auto;
+    text-align: center;
+    border: 3px solid crimson;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+@media(min-width:480px){
+    .menu {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+.contenedor a {
+    padding: 10px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+
+.contenedor a:hover{
+    background-color: burlywood;
+    color: black;
+}
+
+/* SECTION = DESIGN("titulo 2")*/
+
+
+.design {
+    background-image: url(../Imagenes/teclado.png.webp);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    margin: 20px auto;
+    
+}
+
+.design-contain{
+    position: absolute;
+    background-color: rgba(0,0,0, 0.2);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.design-contain h2{
+   
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(250, 4, 65);
+    text-shadow: black 1px 0 8px;
+}
+
+.design-contain a{
+    font-size: 1.7 rem;
+    color: #fff;
+}
+
+.img.iconloc{
+    margin: 0;
+    padding: 0;
+}
+
+.boton {
+    color:  #ccc;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin-top: 25px;
+    border: 1px solid rgb(145, 17, 17);
+    border-radius: 10px;
+    background-color: rgb(251, 106, 110);
+    color: rgba(82, 3, 3, 0.5)
+}
+
+.boton:hover {
+    background-color: rgb(200,85,100);
+    color: #ccc;
+}
+
+
+/*      CONTENEDOR MAIN*/
+
+.contain-main.sombra {
+    margin: 20px  auto;
+    background-color: rgba(238, 146, 140, 0.55);
+    padding: 10px;
+    min-height: 100vh;
+    position: relative;
+    width: 85%;
+    max-width: 1200px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; 
+    justify-self: center;
+    color: rgb(103, 99, 99);
+
+}
+
+
+
+.sombra{
+    text-align: center;
+    box-shadow: 10px 10px 60px -12px rgba(133,175,196,0.55);
+}
+
+
+.servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: space-between;
+        align-content: center;
+        margin: 10px;        
+        padding-top: 10px;
+}
+
+.servicios p {
+    font-size: 1em;
+    text-align: justify;
+    text-align: start;
+}
+
+
+
+/*   CONTACTO */
+
+.contacto h4 {
+    font-size: 1.5rem;
+    color: #b53434;
+    padding: 5px;
+}
+
+.formulario {
+    background-color: #f4d0d0;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #b53434;
+}
+
+.formulario fieldset {
+    border: none;
+    padding: 0;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #b53434;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+}
+
+.formulario input, 
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario .campos {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 420px) {
+    .formulario {
+        margin: 10px;
+        float: right;
+        padding: 0;
+        max-width: 90%; 
+    }
+
+    .formulario legend {
+        font-size: 1rem;
+    }
+
+    .formulario input, 
+    .formulario textarea {
+        font-size: 0.9rem; /* Reduce el tamaño de texto */
+        padding: 8px;
+    }
+}
+
+.boton {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+/*       FOOTER*/
+
+footer {
+    text-align: center;
+}
